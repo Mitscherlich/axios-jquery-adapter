@@ -1,0 +1,63 @@
+{
+  "name": "axios-jquery-adapter",
+  "version": "0.1.0-alpha.0",
+  "description": "Axios adapter for jquery.ajax",
+  "author": "Mitscherlich <mitscherlich36@gmail.com>",
+  "homepage": "https://github.com/Mitscherlich/axios-jquery-adapter",
+  "bugs": {
+    "url": "https://github.com/Mitscherlich/axios-jquery-adapter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitscherlich/axios-jquery-adapter.git"
+  },
+  "main": "dist/axios-jquery-adapter.umd.js",
+  "module": "dist/axios-jquery-adapter.esm.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist/ lib/ types/",
+    "prebuild": "pnpm run clean",
+    "build": "rollup --config rollup.config.js",
+    "dev": "pnpm run build -- --watch",
+    "test": "jest",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.3",
+    "@types/jquery": "^3.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^16.11.9",
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "esbuild": "^0.13.15",
+    "express": "^4.17.1",
+    "jest": "^27.3.1",
+    "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-esbuild": "^4.7.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "axios": ">= 0.9.0",
+    "jquery": ">= 1.12 || 2.x || 3.x"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/test/fixtures/*.spec.ts"
+    ],
+    "setupFilesAfterEnv": [
+      "./test/jest.setup.ts"
+    ]
+  }
+}
