@@ -4,10 +4,8 @@ specifiers:
   '@babel/core': ^7.16.0
   '@babel/preset-env': ^7.16.4
   '@babel/preset-typescript': ^7.16.0
-  '@types/express': ^4.17.13
   '@types/jest': ^27.0.3
   '@types/jquery': ^3.5.8
-  '@types/multer': ^1.4.7
   '@types/node': ^16.11.9
   axios: ^0.24.0
   body-parser: ^1.19.0
@@ -16,7 +14,6 @@ specifiers:
   express: ^4.17.1
   jest: ^27.3.1
   jquery: ^3.6.0
-  morgan: ^1.10.0
   multer: ^1.4.3
   rimraf: ^3.0.2
   rollup: ^2.60.0
@@ -29,10 +26,8 @@ devDependencies:
   '@babel/core': 7.16.0
   '@babel/preset-env': 7.16.4_@babel+core@7.16.0
   '@babel/preset-typescript': 7.16.0_@babel+core@7.16.0
-  '@types/express': 4.17.13
   '@types/jest': 27.0.3
   '@types/jquery': 3.5.8
-  '@types/multer': 1.4.7
   '@types/node': 16.11.9
   axios: 0.24.0
   body-parser: 1.19.0
@@ -41,7 +36,6 @@ devDependencies:
   express: 4.17.1
   jest: 27.3.1_ts-node@10.4.0
   jquery: 3.6.0
-  morgan: 1.10.0
   multer: 1.4.3
   rimraf: 3.0.2
   rollup: 2.60.0
@@ -1515,36 +1509,6 @@ packages:
       '@babel/types': 7.16.0
     dev: true
 
-  /@types/body-parser/1.19.2:
-    resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==, tarball: '@types/body-parser/download/@types/body-parser-1.19.2.tgz'}
-    dependencies:
-      '@types/connect': 3.4.35
-      '@types/node': 16.11.9
-    dev: true
-
-  /@types/connect/3.4.35:
-    resolution: {integrity: sha1-X89q5EXkAh0fwiGaSHPMc6O7KtE=, tarball: '@types/connect/download/@types/connect-3.4.35.tgz'}
-    dependencies:
-      '@types/node': 16.11.9
-    dev: true
-
-  /@types/express-serve-static-core/4.17.25:
-    resolution: {integrity: sha512-OUJIVfRMFijZukGGwTpKNFprqCCXk5WjNGvUgB/CxxBR40QWSjsNK86+yvGKlCOGc7sbwfHLaXhkG+NsytwBaQ==, tarball: '@types/express-serve-static-core/download/@types/express-serve-static-core-4.17.25.tgz'}
-    dependencies:
-      '@types/node': 16.11.9
-      '@types/qs': 6.9.7
-      '@types/range-parser': 1.2.4
-    dev: true
-
-  /@types/express/4.17.13:
-    resolution: {integrity: sha1-p24plXKJmbq1GjP6vOHXBaNwkDQ=, tarball: '@types/express/download/@types/express-4.17.13.tgz'}
-    dependencies:
-      '@types/body-parser': 1.19.2
-      '@types/express-serve-static-core': 4.17.25
-      '@types/qs': 6.9.7
-      '@types/serve-static': 1.13.10
-    dev: true
-
   /@types/graceful-fs/4.1.5:
     resolution: {integrity: sha1-If+6DZjaQ1DbZIkfkqnl2zzbThU=, tarball: '@types/graceful-fs/download/@types/graceful-fs-4.1.5.tgz'}
     dependencies:
@@ -1580,37 +1544,12 @@ packages:
       '@types/sizzle': 2.3.3
     dev: true
 
-  /@types/mime/1.3.2:
-    resolution: {integrity: sha1-k+Jb+e51/g/YC1lLxP6w6GIRG1o=, tarball: '@types/mime/download/@types/mime-1.3.2.tgz'}
-    dev: true
-
-  /@types/multer/1.4.7:
-    resolution: {integrity: sha1-ic8DVHwox7vMcm8Cnip2pyMsx54=, tarball: '@types/multer/download/@types/multer-1.4.7.tgz'}
-    dependencies:
-      '@types/express': 4.17.13
-    dev: true
-
   /@types/node/16.11.9:
     resolution: {integrity: sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==, tarball: '@types/node/download/@types/node-16.11.9.tgz?cache=0&sync_timestamp=1637312709690&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-16.11.9.tgz'}
     dev: true
 
   /@types/prettier/2.4.2:
     resolution: {integrity: sha512-ekoj4qOQYp7CvjX8ZDBgN86w3MqQhLE1hczEJbEIjgFEumDy+na/4AJAbLXfgEWFNB2pKadM5rPFtuSGMWK7xA==, tarball: '@types/prettier/download/@types/prettier-2.4.2.tgz'}
-    dev: true
-
-  /@types/qs/6.9.7:
-    resolution: {integrity: sha1-Y7t9Bn2xB8weRXwwO8JdUR/r9ss=, tarball: '@types/qs/download/@types/qs-6.9.7.tgz'}
-    dev: true
-
-  /@types/range-parser/1.2.4:
-    resolution: {integrity: sha1-zWZ7z90CUhOq+3ylkVqTJZCs3Nw=, tarball: '@types/range-parser/download/@types/range-parser-1.2.4.tgz'}
-    dev: true
-
-  /@types/serve-static/1.13.10:
-    resolution: {integrity: sha1-9eDOh5fS18xevtpIpSyWxPpHqNk=, tarball: '@types/serve-static/download/@types/serve-static-1.13.10.tgz'}
-    dependencies:
-      '@types/mime': 1.3.2
-      '@types/node': 16.11.9
     dev: true
 
   /@types/sizzle/2.3.3:
@@ -1867,13 +1806,6 @@ packages:
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=, tarball: balanced-match/download/balanced-match-1.0.2.tgz}
-    dev: true
-
-  /basic-auth/2.0.1:
-    resolution: {integrity: sha1-uZgnm/R844NEtPPPkW1Gebv1Hjo=, tarball: basic-auth/download/basic-auth-2.0.1.tgz}
-    engines: {node: '>= 0.8'}
-    dependencies:
-      safe-buffer: 5.1.2
     dev: true
 
   /body-parser/1.19.0:
@@ -2193,11 +2125,6 @@ packages:
   /depd/1.1.2:
     resolution: {integrity: sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=, tarball: depd/download/depd-1.1.2.tgz}
     engines: {node: '>= 0.6'}
-    dev: true
-
-  /depd/2.0.0:
-    resolution: {integrity: sha1-tpYWPMdXVg0JzyLMj60Vcbeedt8=, tarball: depd/download/depd-2.0.0.tgz}
-    engines: {node: '>= 0.8'}
     dev: true
 
   /destroy/1.0.4:
@@ -3589,17 +3516,6 @@ packages:
       minimist: 1.2.5
     dev: true
 
-  /morgan/1.10.0:
-    resolution: {integrity: sha1-CRd4q8H8R801CYJGU9rh+qtrF9c=, tarball: morgan/download/morgan-1.10.0.tgz}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      basic-auth: 2.0.1
-      debug: 2.6.9
-      depd: 2.0.0
-      on-finished: 2.3.0
-      on-headers: 1.0.2
-    dev: true
-
   /ms/2.0.0:
     resolution: {integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=, tarball: ms/download/ms-2.0.0.tgz}
     dev: true
@@ -3689,11 +3605,6 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       ee-first: 1.1.1
-    dev: true
-
-  /on-headers/1.0.2:
-    resolution: {integrity: sha1-dysK5qqlJcOZ5Imt+tkMQD6zwo8=, tarball: on-headers/download/on-headers-1.0.2.tgz}
-    engines: {node: '>= 0.8'}
     dev: true
 
   /once/1.4.0:

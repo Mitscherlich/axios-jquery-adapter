@@ -1,7 +1,7 @@
 import axios from 'axios'
 import jqueryAdapter from '../..'
 
-describe('Basic usages', () => {
+describe('Test basic usages', () => {
   const axiosInstance = axios.create({
     baseURL: 'http://localhost:3000',
     adapter: jqueryAdapter,
@@ -22,23 +22,16 @@ describe('Basic usages', () => {
     return config
   })
 
-  test('should get response return ok', async () => {
-    const response = await axiosInstance.get(`/echo/${encodeURIComponent('hello world')}`)
-
-    expect(response.status).toBe(200)
-    expect(response.data).toEqual('hello world')
-  })
-
-  test('should get with urlencoded paramters response return ok', async () => {
+  it('should get response return ok', async () => {
     const response = await axiosInstance.get('/echo', {
-      params: { content: 'hello world' },
+      params: { text: 'hello world' },
     })
 
     expect(response.status).toBe(200)
     expect(response.data).toEqual('hello world')
   })
 
-  test('should post json response ok', async () => {
+  it('should post json response ok', async () => {
     const payload = { name: 'foo' }
 
     const response = await axiosInstance.post('/echo', payload, {
@@ -51,7 +44,7 @@ describe('Basic usages', () => {
     expect(response.data).toEqual(payload)
   })
 
-  test('should post form-data response ok', async () => {
+  it('should post form-data response ok', async () => {
     const payload = { name: 'foo' }
 
     const response = await axiosInstance.post('/echo', payload, {
