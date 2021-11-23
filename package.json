@@ -2,8 +2,14 @@
   "name": "axios-jquery-adapter",
   "version": "0.1.0-alpha.0",
   "description": "Axios adapter for jquery.ajax",
+  "keywords": [
+    "axios",
+    "jquery",
+    "adapter"
+  ],
   "author": "Mitscherlich <mitscherlich36@gmail.com>",
   "homepage": "https://github.com/Mitscherlich/axios-jquery-adapter",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mitscherlich/axios-jquery-adapter/issues"
   },
@@ -14,6 +20,10 @@
   "main": "dist/axios-jquery-adapter.umd.js",
   "module": "dist/axios-jquery-adapter.esm.js",
   "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
     "clean": "rimraf dist/ lib/ types/",
     "prebuild": "pnpm run clean",
