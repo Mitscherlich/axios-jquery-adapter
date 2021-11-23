@@ -23,6 +23,26 @@ export function isDate(val: any): val is Date {
 }
 
 /**
+ * Determine if a value is an empty Object
+ *
+ * @param {Object} val The value to test
+ * @returns {boolean} True if value is an empty Object, otherwise false
+ */
+export function isEmptyObject(val: any): boolean {
+  if (val == null) {
+    return true
+  }
+
+  for (const key in val) {
+    if (Object.prototype.hasOwnProperty.call(val, key)) {
+      return false
+    }
+  }
+
+  return true
+}
+
+/**
  * Iterate over an Array or an Object invoking a function for each item.
  *
  * If `obj` is an Array callback will be called passing

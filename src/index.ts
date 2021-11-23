@@ -1,15 +1,33 @@
 import { ajax as request } from 'jquery'
-import { AxiosAdapter, AxiosResponse } from 'axios'
+import { AxiosAdapter, AxiosResponse, Cancel, Method } from 'axios'
 import * as MIME_TYPES from './internals/mimeTypes'
+import { isEmptyObject } from './utils'
 import { isObjectLike } from './utils/isObjectLike'
 import { settle } from './internals/settle'
 import { buildFullPath } from './internals/buildFullPath'
 import { buildURL } from './helpers/buildURL'
 
 const jqueryAdapter: AxiosAdapter = (config) => {
-  let payload = config.data
+  let method: Method = config.method
 
-  const contentType: string = extractRequestHeader('ContentType', 'content-type', 'Content-Type')
+  if (!method) {
+    method = 'GET'
+  }
+
+  // keep method in upper case
+  method = method.toUpperCase() as Method
+
+  let payload: any = config.data
+
+  const contentType: string | undefined = extractRequestHeader(
+    config.headers,
+    // for jQuery.ajax
+    'ContentType',
+    // for raw XMLHttpRequest
+    'Content-Type',
+    // for Axios
+    'content-type'
+  )
 
   if (contentType === MIME_TYPES.CONTENT_TYPE_JSON && isObjectLike(payload)) {
     payload = JSON.stringify(payload)
@@ -42,7 +60,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
         config.params,
         config.paramsSerializer
       ),
-      method: config.method,
+      method,
       async: true, // axios request always asynchronous
       data: payload,
       dataType,
@@ -50,39 +68,50 @@ const jqueryAdapter: AxiosAdapter = (config) => {
       timeout: config.timeout,
       contentType,
       processData,
-      complete: (jqXHR: JQueryXHR) => {
-        const response: AxiosResponse = {
-          status: jqXHR.status,
-          statusText: jqXHR.statusText,
-          data: jqXHR.responseJSON ?? jqXHR.responseXML ?? jqXHR.responseText,
-          headers: transformResponseHeaders(jqXHR.getAllResponseHeaders()),
-          request: jqXHR,
-          config,
-        }
-
-        settle(resolve, reject, response, config)
-      },
+      complete: onComplete,
     })
 
     if (config.cancelToken) {
       // handle cancellation
-      config.cancelToken.promise.then((cancel) => {
-        if (jqXHR.readyState == 0 && jqXHR.statusText === 'abort') {
-          return // already canceled
-        }
+      config.cancelToken.promise.then(onCanceled)
+    }
 
-        jqXHR.abort('abort') // pass plain string 'abort' to make sure `jqXHR.statusText` always been 'abort'
+    function onComplete(jqXHR: JQueryXHR) {
+      const response: AxiosResponse = {
+        status: jqXHR.status,
+        statusText: jqXHR.statusText,
+        data: jqXHR.responseJSON ?? jqXHR.responseXML ?? jqXHR.responseText,
+        headers: transformResponseHeaders(jqXHR.getAllResponseHeaders()),
+        request: jqXHR,
+        config,
+      }
 
-        reject(cancel)
-      })
+      settle(resolve, reject, response, config)
+    }
+
+    function onCanceled(cancel: Cancel) {
+      if (jqXHR.readyState == 0 && jqXHR.statusText === 'abort') {
+        return // already canceled
+      }
+
+      jqXHR.abort('abort') // pass plain string 'abort' to make sure `jqXHR.statusText` always been 'abort'
+
+      reject(cancel)
     }
   })
 
-  function extractRequestHeader(...keys: string[]): string | undefined {
+  function extractRequestHeader<T>(
+    headers: Record<string, unknown>,
+    ...keys: string[]
+  ): T | undefined {
+    if (!headers || isEmptyObject(headers)) {
+      return
+    }
+
     for (let i = 0, total = keys.length; i < total; i++) {
       const key = keys[i]
-      if (key in config.headers) {
-        return config.headers[key]
+      if (key in headers) {
+        return headers[key] as T
       }
     }
   }
