@@ -29,7 +29,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
     'content-type'
   )
 
-  if (contentType === MIME_TYPES.CONTENT_TYPE_JSON && isObjectLike(payload)) {
+  if (contentType?.includes(MIME_TYPES.CONTENT_TYPE_JSON) && isObjectLike(payload)) {
     payload = JSON.stringify(payload)
   }
 
@@ -49,7 +49,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
 
   let processData
 
-  if (contentType === MIME_TYPES.CONTENT_TYPE_FORM_DATA) {
+  if (contentType?.includes(MIME_TYPES.CONTENT_TYPE_FORM_DATA)) {
     processData = false // tell jquery.ajax not to transform `FormData`
   }
 
