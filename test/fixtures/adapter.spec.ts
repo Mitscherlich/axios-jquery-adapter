@@ -5,7 +5,7 @@ describe('adapter', () => {
     expect(typeof jqueryAdapter).toEqual('function')
   })
 
-  it('should take on parameter ', () => {
+  it('should take one parameter ', () => {
     expect(jqueryAdapter.length).toEqual(1)
   })
 
