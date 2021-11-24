@@ -1,6 +1,6 @@
 {
   "name": "axios-jquery-adapter",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Axios adapter for jquery.ajax",
   "keywords": [
     "axios",
@@ -56,10 +56,15 @@
     "jquery": ">= 1.12 || 2.x || 3.x"
   },
   "jest": {
-    "clearMocks": true,
     "testEnvironment": "jsdom",
     "testMatch": [
-      "**/test/fixtures/*.spec.ts"
+      "**/test/**/*.spec.ts"
     ]
-  }
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/axios-jquery-adapter.min.js",
+      "threshold": "5kB"
+    }
+  ]
 }
