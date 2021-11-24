@@ -17,7 +17,13 @@ const jqueryAdapter: AxiosAdapter = (config) => {
   // keep method in upper case
   method = method.toUpperCase() as Method
 
-  let payload: any = config.data
+  let payload: any
+
+  try {
+    payload = JSON.parse(config.data)
+  } catch {
+    payload = config.data // better than undefined
+  }
 
   const contentType: string | undefined = extractRequestHeader(
     config.headers,
