@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./types",
     "moduleResolution": "node",
     "lib": ["ES2015", "DOM"]
   },

@@ -25,7 +25,7 @@
     "types"
   ],
   "scripts": {
-    "clean": "rimraf dist/ lib/ types/",
+    "clean": "rimraf dist/ types/",
     "build": "rollup --config rollup.config.js",
     "dev": "pnpm run build -- --watch",
     "test:local": "jest",

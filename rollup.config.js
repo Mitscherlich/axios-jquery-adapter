@@ -7,27 +7,14 @@ function createEntries(configs) {
 }
 
 function createEntry(config) {
-  if (config.format === 'dts') {
-    return {
-      input: './src/index.d.ts',
-      plugins: [dts()],
-      output: {
-        file: './types/index.d.ts',
-        format: 'es',
-      },
-    }
-  }
-
   const c = {
     input: './src/index.ts',
     plugins: [],
     output: {
       file: config.file,
       format: config.format,
-      sourcemap: true,
-      globals: {
-        jquery: '$',
-      },
+      sourcemap: !!config.sourcemap,
+      globals: { jquery: '$' },
     },
     external: ['jquery'],
   }
@@ -43,11 +30,15 @@ function createEntry(config) {
     c.output.name = config.name || packageJson.name
   }
 
+  if (config.declaration) {
+    c.plugins.push(dts())
+  } else {
+    c.plugins.push(esbuild(esbuildOptions))
+  }
+
   if (config.minify) {
     c.plugins.push(minify())
   }
-
-  c.plugins.push(esbuild(esbuildOptions))
 
   return c
 }
@@ -56,20 +47,24 @@ export default createEntries([
   {
     file: `dist/${packageJson.name}.esm.js`,
     format: 'es',
-  },
-  {
-    file: `types/index.d.js`,
-    format: 'dts',
+    sourcemap: true,
   },
   {
     file: `dist/${packageJson.name}.umd.js`,
     name: 'axiosJqueryAdapter',
     format: 'umd',
+    sourcemap: true,
   },
   {
     file: `dist/${packageJson.name}.min.js`,
     name: 'axiosJqueryAdapter',
     format: 'umd',
+    sourcemap: true,
     minify: true,
+  },
+  {
+    file: `types/index.d.ts`,
+    format: 'es',
+    declaration: true,
   },
 ])
