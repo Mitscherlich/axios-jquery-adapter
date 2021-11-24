@@ -4,6 +4,7 @@ export { isURLSearchParams } from './isURLSearchParams'
 
 /**
  * Determine if a value is an Array
+ * @see https://github.com/axios/axios/blob/master/lib/utils.js#L15-L17
  *
  * @param {Object} val The value to test
  * @returns {boolean} True if value is an Array, otherwise false
@@ -14,6 +15,7 @@ export function isArray(val: any): val is Array<any> {
 
 /**
  * Determine if a value is a Date
+ * @see https://github.com/axios/axios/blob/master/lib/utils.js#L127-L129
  *
  * @param {Object} val The value to test
  * @returns {boolean} True if value is a Date, otherwise false
@@ -44,6 +46,7 @@ export function isEmptyObject(val: any): boolean {
 
 /**
  * Iterate over an Array or an Object invoking a function for each item.
+ * @see @see https://github.com/axios/axios/blob/master/lib/utils.js#L230-L255
  *
  * If `obj` is an Array callback will be called passing
  * the value, index, and complete array for each item.

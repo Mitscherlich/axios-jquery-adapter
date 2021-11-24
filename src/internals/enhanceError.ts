@@ -2,6 +2,7 @@ import { AxiosError } from 'axios'
 
 /**
  * Update an Error with the specified config, error code, and response.
+ * @see https://github.com/axios/axios/blob/master/lib/core/enhanceError.js#L13-L43
  *
  * @param {Error} error The error to update.
  * @param {Object} config The config.

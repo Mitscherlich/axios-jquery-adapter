@@ -1,5 +1,6 @@
 /**
  * Determines whether the specified URL is absolute
+ * @see https://github.com/axios/axios/blob/master/lib/helpers/isAbsoluteURL.js#L9-L14
  *
  * @param {string} url The URL to test
  * @returns {boolean} True if the specified URL is absolute, otherwise false

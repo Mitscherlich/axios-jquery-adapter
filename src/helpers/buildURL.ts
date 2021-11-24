@@ -12,6 +12,7 @@ function encode(val) {
 
 /**
  * Build a URL by appending params to the end
+ * @see https://github.com/axios/axios/blob/master/lib/helpers/buildURL.js#L22-L70
  *
  * @param {string} url The base of the url (e.g., http://www.google.com)
  * @param {object} [params] The params to be appended
