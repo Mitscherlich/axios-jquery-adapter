@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/Mitscherlich/axios-jquery-adapter.git"
   },
-  "main": "dist/axios-jquery-adapter.umd.js",
+  "main": "dist/axios-jquery-adapter.js",
   "module": "dist/axios-jquery-adapter.esm.js",
   "types": "types/index.d.ts",
   "files": [
@@ -30,7 +30,7 @@
     "dev": "pnpm run build -- --watch",
     "test:local": "jest --verbose",
     "test": "npm-run-all clean build test:local",
-    "prepublishOnly": "run-s clean build"
+    "prepublishOnly": "npm-run-all clean build"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
