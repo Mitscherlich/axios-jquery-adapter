@@ -28,8 +28,8 @@
     "clean": "rimraf dist/ types/",
     "build": "rollup --config rollup.config.js",
     "dev": "pnpm run build -- --watch",
-    "test:local": "jest",
-    "test": "run-s clean build test:local",
+    "test:local": "jest --verbose",
+    "test": "npm-run-all clean build test:local",
     "prepublishOnly": "run-s clean build"
   },
   "devDependencies": {

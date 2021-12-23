@@ -1,12 +1,18 @@
 import jqueryAdapter from '../..'
 
-describe('adapter', () => {
+describe('static', () => {
   it('should be a function', () => {
     expect(typeof jqueryAdapter).toEqual('function')
   })
 
   it('should take one parameter ', () => {
     expect(jqueryAdapter.length).toEqual(1)
+  })
+})
+
+describe('runtime', () => {
+  it('should throw an error if called with no parameter', () => {
+    expect(jqueryAdapter).toThrow()
   })
 
   it('should return a promise', () => {
