@@ -15,8 +15,9 @@ function createEntry(config) {
       format: config.format,
       sourcemap: !!config.sourcemap,
       globals: { jquery: '$' },
+      exports: 'auto',
     },
-    external: ['jquery'],
+    external: ['jquery', 'axios'],
   }
 
   const esbuildOptions = {
@@ -50,18 +51,18 @@ export default createEntries([
     sourcemap: true,
   },
   {
-    file: `dist/${packageJson.name}.umd.js`,
+    file: `dist/${packageJson.name}.js`,
     name: 'axiosJqueryAdapter',
-    format: 'umd',
+    format: 'cjs',
     sourcemap: true,
   },
-  {
-    file: `dist/${packageJson.name}.min.js`,
-    name: 'axiosJqueryAdapter',
-    format: 'umd',
-    sourcemap: true,
-    minify: true,
-  },
+  // {
+  //   file: `dist/${packageJson.name}.min.js`,
+  //   name: 'axiosJqueryAdapter',
+  //   format: 'umd',
+  //   sourcemap: true,
+  //   minify: true,
+  // },
   {
     file: `types/index.d.ts`,
     format: 'es',

@@ -1,11 +1,10 @@
 import { ajax as request } from 'jquery'
 import { AxiosAdapter, AxiosResponse, Cancel, Method } from 'axios'
+import settle from 'axios/lib/core/settle'
+import buildFullPath from 'axios/lib/core/buildFullPath'
+import buildURL from 'axios/lib/helpers/buildURL'
 import * as MIME_TYPES from './internals/mimeTypes'
-import { isEmptyObject } from './utils'
-import { isObjectLike } from './utils/isObjectLike'
-import { settle } from './internals/settle'
-import { buildFullPath } from './internals/buildFullPath'
-import { buildURL } from './helpers/buildURL'
+import { isObjectLike, isEmptyObject } from './utils'
 
 const jqueryAdapter: AxiosAdapter = (config) => {
   let method: Method = config.method
