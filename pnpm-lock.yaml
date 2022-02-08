@@ -7,7 +7,7 @@ specifiers:
   '@types/jest': 27.4.0
   '@types/jquery': 3.5.13
   '@types/node': 16.11.22
-  axios: 0.24.0
+  axios: 0.25.0
   esbuild: 0.14.20
   jest: 27.5.0
   jquery: 3.6.0
@@ -26,7 +26,7 @@ devDependencies:
   '@types/jest': 27.4.0
   '@types/jquery': 3.5.13
   '@types/node': 16.11.22
-  axios: 0.24.0
+  axios: 0.25.0
   esbuild: 0.14.20
   jest: 27.5.0_ts-node@10.5.0
   jquery: 3.6.0
@@ -1693,8 +1693,8 @@ packages:
     resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
     dev: true
 
-  /axios/0.24.0:
-    resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
+  /axios/0.25.0:
+    resolution: {integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==}
     dependencies:
       follow-redirects: 1.14.7
     transitivePeerDependencies:
