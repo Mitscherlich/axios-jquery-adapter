@@ -39,7 +39,7 @@
     "@types/jest": "27.4.0",
     "@types/jquery": "3.5.13",
     "@types/node": "16.11.22",
-    "axios": "0.24.0",
+    "axios": "0.25.0",
     "esbuild": "0.14.20",
     "jest": "27.5.0",
     "jquery": "3.6.0",
