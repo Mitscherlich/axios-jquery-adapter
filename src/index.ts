@@ -58,6 +58,8 @@ const jqueryAdapter: AxiosAdapter = (config) => {
     processData = false // tell jquery.ajax not to transform `FormData`
   }
 
+  type PlainObject<T = any> = { [key: string]: T }
+
   return new Promise((resolve, reject) => {
     const jqXHR = request({
       url: buildURL(
@@ -69,7 +71,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
       async: true, // axios request always asynchronous
       data: payload,
       dataType,
-      headers: config.headers,
+      headers: config.headers as PlainObject<string | undefined | null>,
       timeout: config.timeout,
       contentType,
       processData,
