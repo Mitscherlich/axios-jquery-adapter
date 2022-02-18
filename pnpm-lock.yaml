@@ -13,7 +13,7 @@ specifiers:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.67.2
+  rollup: 2.67.3
   rollup-plugin-dts: 4.1.0
   rollup-plugin-esbuild: 4.8.2
   ts-node: 10.5.0
@@ -32,9 +32,9 @@ devDependencies:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.67.2
-  rollup-plugin-dts: 4.1.0_rollup@2.67.2+typescript@4.5.5
-  rollup-plugin-esbuild: 4.8.2_esbuild@0.14.22+rollup@2.67.2
+  rollup: 2.67.3
+  rollup-plugin-dts: 4.1.0_rollup@2.67.3+typescript@4.5.5
+  rollup-plugin-esbuild: 4.8.2_esbuild@0.14.22+rollup@2.67.3
   ts-node: 10.5.0_ad16171857a0edcfc445c7bfcf336eb6
   typescript: 4.5.5
 
@@ -3862,7 +3862,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.1.0_rollup@2.67.2+typescript@4.5.5:
+  /rollup-plugin-dts/4.1.0_rollup@2.67.3+typescript@4.5.5:
     resolution: {integrity: sha512-rriXIm3jdUiYeiAAd1Fv+x2AxK6Kq6IybB2Z/IdoAW95fb4uRUurYsEYKa8L1seedezDeJhy8cfo8FEL9aZzqg==}
     engines: {node: '>=v12.22.7'}
     peerDependencies:
@@ -3870,13 +3870,13 @@ packages:
       typescript: ~4.1 || ~4.2 || ~4.3 || ~4.4 || ~4.5
     dependencies:
       magic-string: 0.25.7
-      rollup: 2.67.2
+      rollup: 2.67.3
       typescript: 4.5.5
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
 
-  /rollup-plugin-esbuild/4.8.2_esbuild@0.14.22+rollup@2.67.2:
+  /rollup-plugin-esbuild/4.8.2_esbuild@0.14.22+rollup@2.67.3:
     resolution: {integrity: sha512-wsaYNOjzTb6dN1qCIZsMZ7Q0LWiPJklYs2TDI8vJA2LUbvtPUY+17TC8C0vSat3jPMInfR9XWKdA7ttuwkjsGQ==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3889,13 +3889,13 @@ packages:
       esbuild: 0.14.22
       joycon: 3.1.1
       jsonc-parser: 3.0.0
-      rollup: 2.67.2
+      rollup: 2.67.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup/2.67.2:
-    resolution: {integrity: sha512-hoEiBWwZtf1QdK3jZIq59L0FJj4Fiv4RplCO4pvCRC86qsoFurWB4hKQIjoRf3WvJmk5UZ9b0y5ton+62fC7Tw==}
+  /rollup/2.67.3:
+    resolution: {integrity: sha512-G/x1vUwbGtP6O5ZM8/sWr8+p7YfZhI18pPqMRtMYMWSbHjKZ/ajHGiM+GWNTlWyOR0EHIdT8LHU+Z4ciIZ1oBw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
