@@ -67,7 +67,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
         config.params,
         config.paramsSerializer
       ),
-      method,
+      method: method as string,
       async: true, // axios request always asynchronous
       data: payload,
       dataType,
