@@ -7,7 +7,7 @@ specifiers:
   '@types/jest': 27.4.1
   '@types/jquery': 3.5.14
   '@types/node': 16.11.29
-  axios: 0.26.1
+  axios: 0.27.0
   esbuild: 0.14.38
   jest: 28.0.0
   jest-environment-jsdom: 28.0.0
@@ -27,7 +27,7 @@ devDependencies:
   '@types/jest': 27.4.1
   '@types/jquery': 3.5.14
   '@types/node': 16.11.29
-  axios: 0.26.1
+  axios: 0.27.0
   esbuild: 0.14.38
   jest: 28.0.0_58a82552207802b99b40c6a57613eff9
   jest-environment-jsdom: 28.0.0
@@ -1750,10 +1750,11 @@ packages:
     resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
     dev: true
 
-  /axios/0.26.1:
-    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
+  /axios/0.27.0:
+    resolution: {integrity: sha512-XV/WrPxXfzgZ8j4lcB5i6LyaXmi90yetmV/Fem0kmglGx+mpY06CiweL3YxU6wOTNLmqLUePW4G8h45nGZ/+pA==}
     dependencies:
-      follow-redirects: 1.14.8
+      follow-redirects: 1.14.9
+      form-data: 4.0.0
     transitivePeerDependencies:
       - debug
     dev: true
@@ -2523,8 +2524,8 @@ packages:
       path-exists: 4.0.0
     dev: true
 
-  /follow-redirects/1.14.8:
-    resolution: {integrity: sha512-1x0S9UVJHsQprFcEC/qnNzBLcIxsjAV905f/UkQxbclCsoTWlacCNOpQa/anodLl2uaEKFhfWOvM2Qg77+15zA==}
+  /follow-redirects/1.14.9:
+    resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
