@@ -7,14 +7,14 @@ import * as MIME_TYPES from './internals/mimeTypes'
 import { isObjectLike, isEmptyObject } from './utils'
 
 const jqueryAdapter: AxiosAdapter = (config) => {
-  let method: Method = config.method
+  let method = config.method as string
 
   if (!method) {
     method = 'GET'
   }
 
   // keep method in upper case
-  method = method.toUpperCase() as Method
+  method = method.toUpperCase()
 
   let payload: any
 
@@ -67,7 +67,7 @@ const jqueryAdapter: AxiosAdapter = (config) => {
         config.params,
         config.paramsSerializer
       ),
-      method: method as string,
+      method,
       async: true, // axios request always asynchronous
       data: payload,
       dataType,
