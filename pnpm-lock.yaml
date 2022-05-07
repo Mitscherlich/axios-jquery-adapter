@@ -14,7 +14,7 @@ specifiers:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.72.0
+  rollup: 2.72.1
   rollup-plugin-dts: 4.2.1
   rollup-plugin-esbuild: 4.9.1
   ts-node: 10.7.0
@@ -34,9 +34,9 @@ devDependencies:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.72.0
-  rollup-plugin-dts: 4.2.1_s6zbpzdkhlvcqzhawas6jkergu
-  rollup-plugin-esbuild: 4.9.1_zdwxx76xd73ibjgz5r322rbegy
+  rollup: 2.72.1
+  rollup-plugin-dts: 4.2.1_pz6niy2zrvqhgxfup3pdyir4yu
+  rollup-plugin-esbuild: 4.9.1_pnyrwy4zazm4ltxxkdqkpc4vuy
   ts-node: 10.7.0_7vfv75elicf7ijnl73ckmqo2cm
   typescript: 4.6.4
 
@@ -355,6 +355,8 @@ packages:
     resolution: {integrity: sha512-n2Q6i+fnJqzOaq2VkdXxy2TCPCWQZHiCo0XqmrCvDWcZQKRyZzYi4Z0yxlBuN0w+r2ZHmre+Q087DSrw3pbJDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.10
     dev: true
 
   /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/7.16.7_@babel+core@7.17.10:
@@ -3907,7 +3909,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.1_s6zbpzdkhlvcqzhawas6jkergu:
+  /rollup-plugin-dts/4.2.1_pz6niy2zrvqhgxfup3pdyir4yu:
     resolution: {integrity: sha512-eaxQZNUJ5iQcxNGlpJ1CUgG4OSVqWjDZ3nNSWBIoGrpcote2aNphSe1RJOaSYkb8dwn3o+rYm1vvld/5z3EGSQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -3915,13 +3917,13 @@ packages:
       typescript: ^4.6
     dependencies:
       magic-string: 0.26.1
-      rollup: 2.72.0
+      rollup: 2.72.1
       typescript: 4.6.4
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
 
-  /rollup-plugin-esbuild/4.9.1_zdwxx76xd73ibjgz5r322rbegy:
+  /rollup-plugin-esbuild/4.9.1_pnyrwy4zazm4ltxxkdqkpc4vuy:
     resolution: {integrity: sha512-qn/x7Wz9p3Xnva99qcb+nopH0d2VJwVnsxJTGEg+Sh2Z3tqQl33MhOwzekVo1YTKgv+yAmosjcBRJygMfGrtLw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3934,13 +3936,13 @@ packages:
       esbuild: 0.14.38
       joycon: 3.1.1
       jsonc-parser: 3.0.0
-      rollup: 2.72.0
+      rollup: 2.72.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup/2.72.0:
-    resolution: {integrity: sha512-KqtR2YcO35/KKijg4nx4STO3569aqCUeGRkKWnJ6r+AvBBrVY9L4pmf4NHVrQr4mTOq6msbohflxr2kpihhaOA==}
+  /rollup/2.72.1:
+    resolution: {integrity: sha512-NTc5UGy/NWFGpSqF1lFY8z9Adri6uhyMLI6LvPAXdBKoPRFhIIiBUpt+Qg2awixqO3xvzSijjhnb4+QEZwJmxA==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
