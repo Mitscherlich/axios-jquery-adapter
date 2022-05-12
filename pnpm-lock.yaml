@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.17.10
   '@babel/preset-env': 7.17.10
   '@babel/preset-typescript': 7.16.7
-  '@types/jest': 27.5.0
+  '@types/jest': 27.5.1
   '@types/jquery': 3.5.14
   '@types/node': 16.11.34
   axios: 0.27.2
@@ -24,7 +24,7 @@ devDependencies:
   '@babel/core': 7.17.10
   '@babel/preset-env': 7.17.10_@babel+core@7.17.10
   '@babel/preset-typescript': 7.16.7_@babel+core@7.17.10
-  '@types/jest': 27.5.0
+  '@types/jest': 27.5.1
   '@types/jquery': 3.5.14
   '@types/node': 16.11.34
   axios: 0.27.2
@@ -1619,8 +1619,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.5.0:
-    resolution: {integrity: sha512-9RBFx7r4k+msyj/arpfaa0WOOEcaAZNmN+j80KFbFCoSqCJGHTz7YMAMGQW9Xmqm5w6l5c25vbSjMwlikJi5+g==}
+  /@types/jest/27.5.1:
+    resolution: {integrity: sha512-fUy7YRpT+rHXto1YlL+J9rs0uLGyiqVt3ZOTQR+4ROc47yNl8WLdVLgUloBRhOxP1PZvguHl44T3H0wAWxahYQ==}
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
