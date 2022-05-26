@@ -15,7 +15,7 @@ specifiers:
   npm-run-all: 4.1.5
   rimraf: 3.0.2
   rollup: 2.74.1
-  rollup-plugin-dts: 4.2.1
+  rollup-plugin-dts: 4.2.2
   rollup-plugin-esbuild: 4.9.1
   ts-node: 10.8.0
   typescript: 4.7.2
@@ -35,7 +35,7 @@ devDependencies:
   npm-run-all: 4.1.5
   rimraf: 3.0.2
   rollup: 2.74.1
-  rollup-plugin-dts: 4.2.1_durm56y4qsrp7annnznb67puce
+  rollup-plugin-dts: 4.2.2_durm56y4qsrp7annnznb67puce
   rollup-plugin-esbuild: 4.9.1_3pm4nepjd6vnmqn35npt5y2clm
   ts-node: 10.8.0_4vcxniz6c2zf6q742nqxy3egzi
   typescript: 4.7.2
@@ -3916,12 +3916,12 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.1_durm56y4qsrp7annnznb67puce:
-    resolution: {integrity: sha512-eaxQZNUJ5iQcxNGlpJ1CUgG4OSVqWjDZ3nNSWBIoGrpcote2aNphSe1RJOaSYkb8dwn3o+rYm1vvld/5z3EGSQ==}
+  /rollup-plugin-dts/4.2.2_durm56y4qsrp7annnznb67puce:
+    resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
-      rollup: ^2.70
-      typescript: ^4.6
+      rollup: ^2.55
+      typescript: ^4.1
     dependencies:
       magic-string: 0.26.1
       rollup: 2.74.1
