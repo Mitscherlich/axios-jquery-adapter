@@ -14,7 +14,7 @@ specifiers:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.75.0
+  rollup: 2.75.1
   rollup-plugin-dts: 4.2.2
   rollup-plugin-esbuild: 4.9.1
   ts-node: 10.8.0
@@ -34,9 +34,9 @@ devDependencies:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.75.0
-  rollup-plugin-dts: 4.2.2_hvzinrt4l2tnowz34ncmm5wr3u
-  rollup-plugin-esbuild: 4.9.1_pf4ciewabmfawf2ccdly3yuqp4
+  rollup: 2.75.1
+  rollup-plugin-dts: 4.2.2_jwmgqiuzdyjonbaioghejmsiny
+  rollup-plugin-esbuild: 4.9.1_4owotmri2q2u7ngksxy3z2dmse
   ts-node: 10.8.0_4vcxniz6c2zf6q742nqxy3egzi
   typescript: 4.7.2
 
@@ -3916,7 +3916,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.2_hvzinrt4l2tnowz34ncmm5wr3u:
+  /rollup-plugin-dts/4.2.2_jwmgqiuzdyjonbaioghejmsiny:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -3924,13 +3924,13 @@ packages:
       typescript: ^4.1
     dependencies:
       magic-string: 0.26.1
-      rollup: 2.75.0
+      rollup: 2.75.1
       typescript: 4.7.2
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
 
-  /rollup-plugin-esbuild/4.9.1_pf4ciewabmfawf2ccdly3yuqp4:
+  /rollup-plugin-esbuild/4.9.1_4owotmri2q2u7ngksxy3z2dmse:
     resolution: {integrity: sha512-qn/x7Wz9p3Xnva99qcb+nopH0d2VJwVnsxJTGEg+Sh2Z3tqQl33MhOwzekVo1YTKgv+yAmosjcBRJygMfGrtLw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3943,13 +3943,13 @@ packages:
       esbuild: 0.14.41
       joycon: 3.1.1
       jsonc-parser: 3.0.0
-      rollup: 2.75.0
+      rollup: 2.75.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup/2.75.0:
-    resolution: {integrity: sha512-1/wxtweHJ7YwI2AIK3ZgCBU3nbW8sLnBIFwN46cwOTnVzt8f1o6J8zPKjwoiuADvzSjmnLqJce31p0q2vQ+dqw==}
+  /rollup/2.75.1:
+    resolution: {integrity: sha512-zD73rq3Fanr/spmiybMqmGEvOpryj/heLqOb+lubxiXlo8azeJ/z306T2dJYuzfWZPQBS0OT++GXG6Lbd4ToKw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
