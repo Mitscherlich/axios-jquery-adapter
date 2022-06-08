@@ -14,7 +14,7 @@ specifiers:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.75.5
+  rollup: 2.75.6
   rollup-plugin-dts: 4.2.2
   rollup-plugin-esbuild: 4.9.1
   ts-node: 10.8.1
@@ -34,9 +34,9 @@ devDependencies:
   jquery: 3.6.0
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.75.5
-  rollup-plugin-dts: 4.2.2_5tbauevimgxepjeo5powblb5xq
-  rollup-plugin-esbuild: 4.9.1_ghanyvlk4kmo7d7no7vuwcjfky
+  rollup: 2.75.6
+  rollup-plugin-dts: 4.2.2_fgms252lqu3rk7srzpqqayl4ya
+  rollup-plugin-esbuild: 4.9.1_qv6slia5ybvwwvahh3z7va6kda
   ts-node: 10.8.1_pjlhwcktroxhni6x7uirug5lya
   typescript: 4.7.3
 
@@ -3918,7 +3918,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.2_5tbauevimgxepjeo5powblb5xq:
+  /rollup-plugin-dts/4.2.2_fgms252lqu3rk7srzpqqayl4ya:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -3926,13 +3926,13 @@ packages:
       typescript: ^4.1
     dependencies:
       magic-string: 0.26.1
-      rollup: 2.75.5
+      rollup: 2.75.6
       typescript: 4.7.3
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
 
-  /rollup-plugin-esbuild/4.9.1_ghanyvlk4kmo7d7no7vuwcjfky:
+  /rollup-plugin-esbuild/4.9.1_qv6slia5ybvwwvahh3z7va6kda:
     resolution: {integrity: sha512-qn/x7Wz9p3Xnva99qcb+nopH0d2VJwVnsxJTGEg+Sh2Z3tqQl33MhOwzekVo1YTKgv+yAmosjcBRJygMfGrtLw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -3945,13 +3945,13 @@ packages:
       esbuild: 0.14.42
       joycon: 3.1.1
       jsonc-parser: 3.0.0
-      rollup: 2.75.5
+      rollup: 2.75.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup/2.75.5:
-    resolution: {integrity: sha512-JzNlJZDison3o2mOxVmb44Oz7t74EfSd1SQrplQk0wSaXV7uLQXtVdHbxlcT3w+8tZ1TL4r/eLfc7nAbz38BBA==}
+  /rollup/2.75.6:
+    resolution: {integrity: sha512-OEf0TgpC9vU6WGROJIk1JA3LR5vk/yvqlzxqdrE2CzzXnqKXNzbAwlWUXis8RS3ZPe7LAq+YUxsRa0l3r27MLA==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
