@@ -18,7 +18,7 @@ specifiers:
   rollup-plugin-dts: 4.2.2
   rollup-plugin-esbuild: 4.9.1
   ts-node: 10.8.1
-  typescript: 4.7.3
+  typescript: 4.7.4
 
 devDependencies:
   '@babel/core': 7.18.5
@@ -35,10 +35,10 @@ devDependencies:
   npm-run-all: 4.1.5
   rimraf: 3.0.2
   rollup: 2.75.6
-  rollup-plugin-dts: 4.2.2_fgms252lqu3rk7srzpqqayl4ya
+  rollup-plugin-dts: 4.2.2_63sirsnfvviu2qxghjzgkmnlpm
   rollup-plugin-esbuild: 4.9.1_4hleo3ma46wdvkztqsmrtcwgoq
-  ts-node: 10.8.1_zag423k5mmeq7scacelqeecc34
-  typescript: 4.7.3
+  ts-node: 10.8.1_qqpsu5gwjto2muvbbvmj4ndcmu
+  typescript: 4.7.4
 
 packages:
 
@@ -3013,7 +3013,7 @@ packages:
       pretty-format: 28.1.1
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.8.1_zag423k5mmeq7scacelqeecc34
+      ts-node: 10.8.1_qqpsu5gwjto2muvbbvmj4ndcmu
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3883,7 +3883,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.2_fgms252lqu3rk7srzpqqayl4ya:
+  /rollup-plugin-dts/4.2.2_63sirsnfvviu2qxghjzgkmnlpm:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -3892,7 +3892,7 @@ packages:
     dependencies:
       magic-string: 0.26.1
       rollup: 2.75.6
-      typescript: 4.7.3
+      typescript: 4.7.4
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
@@ -4217,7 +4217,7 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /ts-node/10.8.1_zag423k5mmeq7scacelqeecc34:
+  /ts-node/10.8.1_qqpsu5gwjto2muvbbvmj4ndcmu:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
@@ -4243,7 +4243,7 @@ packages:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.7.3
+      typescript: 4.7.4
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     dev: true
@@ -4265,8 +4265,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript/4.7.3:
-    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
+  /typescript/4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
