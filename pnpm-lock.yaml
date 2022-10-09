@@ -15,7 +15,7 @@ specifiers:
   npm-run-all: 4.1.5
   rimraf: 3.0.2
   rollup: 2.79.1
-  rollup-plugin-dts: 4.2.2
+  rollup-plugin-dts: 4.2.3
   rollup-plugin-esbuild: 4.10.1
   ts-node: 10.9.1
   typescript: 4.8.4
@@ -35,7 +35,7 @@ devDependencies:
   npm-run-all: 4.1.5
   rimraf: 3.0.2
   rollup: 2.79.1
-  rollup-plugin-dts: 4.2.2_gypgyaqhine6mwjfvh7icfhviq
+  rollup-plugin-dts: 4.2.3_gypgyaqhine6mwjfvh7icfhviq
   rollup-plugin-esbuild: 4.10.1_fwemgdvumxap6dfcd4fpjmg6cy
   ts-node: 10.9.1_k2jc2lb6qrtdc3lulqxjwnbwoi
   typescript: 4.8.4
@@ -3568,8 +3568,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /magic-string/0.26.1:
-    resolution: {integrity: sha512-ndThHmvgtieXe8J/VGPjG+Apu7v7ItcD5mhEIvOscWjPF/ccOiLxHaSuCAS2G+3x4GKsAbT8u7zdyamupui8Tg==}
+  /magic-string/0.26.6:
+    resolution: {integrity: sha512-6d+3bFybzyQFJYSoRsl9ZC0wheze8M1LrQC7tNMRqXR4izUTDOLMd9BtSuExK9iAukFh+s5K0WAhc/dlQ+HKYA==}
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
@@ -3985,14 +3985,14 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/4.2.2_gypgyaqhine6mwjfvh7icfhviq:
-    resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
-    engines: {node: '>=v12.22.11'}
+  /rollup-plugin-dts/4.2.3_gypgyaqhine6mwjfvh7icfhviq:
+    resolution: {integrity: sha512-jlcpItqM2efqfIiKzDB/IKOS9E9fDvbkJSGw5GtK/PqPGS9eC3R3JKyw2VvpTktZA+TNgJRMu1NTv244aTUzzQ==}
+    engines: {node: '>=v12.22.12'}
     peerDependencies:
       rollup: ^2.55
       typescript: ^4.1
     dependencies:
-      magic-string: 0.26.1
+      magic-string: 0.26.6
       rollup: 2.79.1
       typescript: 4.8.4
     optionalDependencies:
