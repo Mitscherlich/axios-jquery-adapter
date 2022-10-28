@@ -14,7 +14,7 @@ specifiers:
   jquery: 3.6.1
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.79.1
+  rollup: 3.2.3
   rollup-plugin-dts: 5.0.0
   rollup-plugin-esbuild: 4.10.1
   ts-node: 10.9.1
@@ -34,9 +34,9 @@ devDependencies:
   jquery: 3.6.1
   npm-run-all: 4.1.5
   rimraf: 3.0.2
-  rollup: 2.79.1
-  rollup-plugin-dts: 5.0.0_gypgyaqhine6mwjfvh7icfhviq
-  rollup-plugin-esbuild: 4.10.1_lecm7whau5ub3cwxpurr6hs4em
+  rollup: 3.2.3
+  rollup-plugin-dts: 5.0.0_655ssj4e7sdqlljrreeiqtltve
+  rollup-plugin-esbuild: 4.10.1_droztabqhwwmdz3zmwuhn47qtq
   ts-node: 10.9.1_evej5wzm4hojmu6uzxwpspdmsu
   typescript: 4.8.4
 
@@ -3993,7 +3993,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-dts/5.0.0_gypgyaqhine6mwjfvh7icfhviq:
+  /rollup-plugin-dts/5.0.0_655ssj4e7sdqlljrreeiqtltve:
     resolution: {integrity: sha512-OO8ayCvuJCKaQSShyVTARxGurVVk4ulzbuvz+0zFd1f93vlnWFU5pBMT7HFeS6uj7MvvZLx4kUAarGATSU1+Ng==}
     engines: {node: '>=v14'}
     peerDependencies:
@@ -4001,13 +4001,13 @@ packages:
       typescript: ^4.1
     dependencies:
       magic-string: 0.26.7
-      rollup: 2.79.1
+      rollup: 3.2.3
       typescript: 4.8.4
     optionalDependencies:
       '@babel/code-frame': 7.18.6
     dev: true
 
-  /rollup-plugin-esbuild/4.10.1_lecm7whau5ub3cwxpurr6hs4em:
+  /rollup-plugin-esbuild/4.10.1_droztabqhwwmdz3zmwuhn47qtq:
     resolution: {integrity: sha512-/ymcRB283zjFp1JTBXO8ekxv0c9vRc2L6OTljghsLthQ4vqeDSDWa9BVz1tHiVrx6SbUnUpDPLC0K/MXK7j5TA==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -4020,14 +4020,14 @@ packages:
       esbuild: 0.15.12
       joycon: 3.1.1
       jsonc-parser: 3.0.0
-      rollup: 2.79.1
+      rollup: 3.2.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup/2.79.1:
-    resolution: {integrity: sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==}
-    engines: {node: '>=10.0.0'}
+  /rollup/3.2.3:
+    resolution: {integrity: sha512-qfadtkY5kl0F5e4dXVdj2D+GtOdifasXHFMiL1SMf9ADQDv5Eti6xReef9FKj+iQPR2pvtqWna57s/PjARY4fg==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
