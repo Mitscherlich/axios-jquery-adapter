@@ -16,7 +16,7 @@ specifiers:
   rimraf: 3.0.2
   rollup: 2.79.1
   rollup-plugin-dts: 5.0.0
-  rollup-plugin-esbuild: 4.10.1
+  rollup-plugin-esbuild: 4.10.3
   ts-node: 10.9.1
   typescript: 4.8.4
 
@@ -36,7 +36,7 @@ devDependencies:
   rimraf: 3.0.2
   rollup: 2.79.1
   rollup-plugin-dts: 5.0.0_gypgyaqhine6mwjfvh7icfhviq
-  rollup-plugin-esbuild: 4.10.1_262lvhvyihdlvksbgkdfcthuiu
+  rollup-plugin-esbuild: 4.10.3_262lvhvyihdlvksbgkdfcthuiu
   ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
   typescript: 4.8.4
 
@@ -3944,8 +3944,8 @@ packages:
       '@babel/code-frame': 7.18.6
     dev: true
 
-  /rollup-plugin-esbuild/4.10.1_262lvhvyihdlvksbgkdfcthuiu:
-    resolution: {integrity: sha512-/ymcRB283zjFp1JTBXO8ekxv0c9vRc2L6OTljghsLthQ4vqeDSDWa9BVz1tHiVrx6SbUnUpDPLC0K/MXK7j5TA==}
+  /rollup-plugin-esbuild/4.10.3_262lvhvyihdlvksbgkdfcthuiu:
+    resolution: {integrity: sha512-RILwUCgnCL5vo8vyZ/ZpwcqRuE5KmLizEv6BujBQfgXFZ6ggcS0FiYvQN+gsTJfWCMaU37l0Fosh4eEufyO97Q==}
     engines: {node: '>=12'}
     peerDependencies:
       esbuild: '>=0.10.1'
