@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.21.3
   '@babel/preset-env': 7.20.2
   '@babel/preset-typescript': 7.21.0
-  '@types/jest': 29.4.4
+  '@types/jest': 29.5.0
   '@types/jquery': 3.5.16
   '@types/node': 18.15.3
   axios: 0.27.2
@@ -24,7 +24,7 @@ devDependencies:
   '@babel/core': 7.21.3
   '@babel/preset-env': 7.20.2_@babel+core@7.21.3
   '@babel/preset-typescript': 7.21.0_@babel+core@7.21.3
-  '@types/jest': 29.4.4
+  '@types/jest': 29.5.0
   '@types/jquery': 3.5.16
   '@types/node': 18.15.3
   axios: 0.27.2
@@ -1879,8 +1879,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.4.4:
-    resolution: {integrity: sha512-qezb65VIH7X1wobSnd6Lvdve7PXSyQRa3dljTkhTtDhi603RvHQCshSlJcuyMLHJpeHgY3NKwvDJWxMOOHxGDQ==}
+  /@types/jest/29.5.0:
+    resolution: {integrity: sha512-3Emr5VOl/aoBwnWcH/EFQvlSAmjV+XtV9GGu5mwdYew5vhQh0IUZx/60x0TzHDu09Bi7HMx10t/namdJw5QIcg==}
     dependencies:
       expect: 29.5.0
       pretty-format: 29.5.0
