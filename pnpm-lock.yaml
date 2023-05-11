@@ -32,8 +32,8 @@ devDependencies:
     specifier: 29.5.0
     version: 29.5.0
   jquery:
-    specifier: 3.6.4
-    version: 3.6.4
+    specifier: 3.7.0
+    version: 3.7.0
   npm-run-all:
     specifier: 4.1.5
     version: 4.1.5
@@ -3431,8 +3431,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /jquery@3.6.4:
-    resolution: {integrity: sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==}
+  /jquery@3.7.0:
+    resolution: {integrity: sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ==}
     dev: true
 
   /js-tokens@4.0.0:
