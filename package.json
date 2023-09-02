@@ -37,7 +37,7 @@
     "@babel/preset-env": "7.22.14",
     "@babel/preset-typescript": "7.22.11",
     "@types/jest": "29.5.4",
-    "@types/jquery": "3.5.17",
+    "@types/jquery": "3.5.18",
     "@types/node": "18.17.13",
     "axios": "0.27.2",
     "esbuild": "0.19.2",
