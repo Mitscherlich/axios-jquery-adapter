@@ -18,8 +18,8 @@ devDependencies:
     specifier: 29.5.10
     version: 29.5.10
   '@types/jquery':
-    specifier: 3.5.27
-    version: 3.5.27
+    specifier: 3.5.29
+    version: 3.5.29
   '@types/node':
     specifier: 20.9.4
     version: 20.9.4
@@ -1988,8 +1988,8 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
-  /@types/jquery@3.5.27:
-    resolution: {integrity: sha512-TR28Y8ezIGgfyA02UOh9x+Fy16/1qWYAnvtRd2gTBJuccX/vmddyti0MezLkTv7f+OLofVc2T961VPyKv1tXJQ==}
+  /@types/jquery@3.5.29:
+    resolution: {integrity: sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg==}
     dependencies:
       '@types/sizzle': 2.3.3
     dev: true
