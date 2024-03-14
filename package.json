@@ -40,7 +40,7 @@
     "@types/jquery": "3.5.29",
     "@types/node": "20.11.27",
     "axios": "0.28.0",
-    "esbuild": "0.20.1",
+    "esbuild": "0.20.2",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "jquery": "3.7.1",
